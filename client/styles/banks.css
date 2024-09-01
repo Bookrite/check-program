@@ -1,0 +1,45 @@
+.doc {
+
+    margin: auto;
+    width: 70%;
+    height: 750px;
+    border: black solid 1px;
+}
+
+button {
+    border: rgb(82, 82, 191) solid 0.5px;
+    background-color: rgb(255, 255, 255);
+}
+
+button:hover {
+    background-color: rgb(221, 227, 227);
+    border: rgb(82, 191, 109) solid 0.5px;
+}
+
+#addBank {
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    top: 25%;
+    bottom: 25%;
+    border: black solid 1px;
+    align-content: center;
+    text-align: center;
+    display: none;
+}
+.addBankButton{
+   position: absolute;
+   bottom: 0%;
+   right: 0%;
+   width: 100px;
+   height: 40px;
+   background-color: rgb(224, 239, 234);
+}
+.cencelButton{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100px;
+   height: 40px;
+   background-color: rgb(224, 239, 234);
+}

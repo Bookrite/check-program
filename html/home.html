@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Bookrite Check Writer</title>
+  <link rel="stylesheet" href="../client/styles/sideMenu.css">
+  <link rel="stylesheet" href="../client/styles/home.css">
+  <link rel="stylesheet" href="../client/styles/style.css">
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="bankAccounts.html">Bank Accounts</a></li>
+      <li><a href="payees.html">Payees</a></li>
+      <li><a href="checks.html">checks</a></li>
+    </ul>
+  </nav>
+
+  <div class="doc">
+
+
+    <div id="topOfCheck" class="check" style="border: black 1px solid;">
+
+      <div class="Name-address"><textarea id="text-area" cols="37" rows="6" placeholder="Name/address"
+          class="Text-area"></textarea>
+      </div>
+
+      <div class="Bank-name"><select type="text" id="bankName">
+          <option value="">Select Bank</option>
+        </select>
+      </div>
+
+      <div class="check-number"><input type="text" placeholder="1000">
+      </div>
+
+      <div class="date"><input type="date">
+      </div>
+
+      <div class="Pay-to">PAY TO THE<br>ORDER
+        OF_________________________________________________________________________________________________________________________________________________
+      </div>
+
+      <div class="amaunt">
+        <input type="text" placeholder="$100.00" id="test"></input>
+      </div>
+
+      <div class="text-amaunt">
+        ______________________________________________________________________________________Dollars
+      </div>
+
+      <div class="text-amaunt-input" id="amauntAsText">
+        <input type="text">
+      </div>
+
+      <div class="Pay-To-Input"><input type="text" maxlength="100">
+      </div>
+
+      <div class="Signature">____________________________
+      </div>
+
+      <div class="Signature-text">
+        AUTHORIZED SIGNATURE
+      </div>
+
+      <div class="Sign-Hare"><input type="text" class="Sign-Hare-input" id="Sign" name="Sign">
+      </div>
+
+      <div class="check-futer">
+        <span class="check-number-foter-input"><input type="text" placeholder="check number" id="checkNumberFoter"
+            class="check-futer-input"></span>
+        <span class="routing-number"><input type="text" placeholder="routhing number" class="check-futer-input"
+            id="routingNumber"></span>
+        <span class="account-number"><input type="text" class="check-futer-input" placeholder="account number"
+            id="accountNumber"></span>
+      </div>
+
+    </div>
+    <button class="PrintCheck">Print Check</button>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>

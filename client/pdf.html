@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="./styles/style.css">
+
+
+
+</head>
+
+<body>
+  <button id="downloadButton" type="button" onclick="downloadPdf()">Download Check As PDF</button>
+  <button onclick="printDiv('check')">Print check top</button>
+  <button id="save">Save and print</button>
+  <button>Save and Download</button>
+  <!--<button onclick="printMultipleChecks()">Print multiple checks for qb</button>-->
+  <br><br><br><br><br><br>
+
+
+
+
+
+  <div id="check" class="full-check">
+
+    <div id="topOfCheck" class="check">
+
+      <div class="Name-address"><textarea id="text-area" cols="37" rows="6" placeholder="Name/address"
+          class="Text-area"></textarea>
+      </div>
+
+      <div class="Bank-name">
+
+        <select name="bank" id="bank" style="width: 125px; " onchange="hendelBankDropDown()">
+          <option value="default">Select Bank</option>
+          <option value="addNew">Add New Bank</option>
+      </div>
+
+      </select>
+
+
+      <!--<input type="text" placeholder="Bank name" id="bankName">-->
+    </div>
+
+    <div class="check-number"><input type="text" id="checkNumber" placeholder="1000">
+    </div>
+
+    <div class="date"><input type="date" id="date">
+    </div>
+
+    <div class="Pay-to">PAY TO THE<br>ORDER
+      OF_________________________________________________________________________________________________________________________________________________
+    </div>
+
+    <div class="amaunt">
+      <input type="text" placeholder="$100.00" id="test"></input>
+    </div>
+
+    <div class="text-amaunt">
+      ______________________________________________________________________________________Dollars
+    </div>
+
+    <div class="text-amaunt-input" id="amauntAsText">
+      <input type="text">
+    </div>
+
+    <div class="Pay-To-Input" id="payTo"><input type="text" maxlength="100" id="payTo2">
+    </div>
+
+    <div class="Signature">____________________________
+    </div>
+
+    <div class="Signature-text">
+      AUTHORIZED SIGNATURE
+    </div>
+
+    <div class="Sign-Hare"><input type="text" class="Sign-Hare-input" id="Sign" name="Sign">
+    </div>
+
+    <div class="check-futer">
+      <span class="check-number-foter-input"><span type="text" placeholder="check number" id="checkNumberFoter"
+          class="check-futer-input"></span></span>
+      <span class="routing-number"><span type="text" placeholder="routhing number" class="check-futer-input"
+          id="routingNumber"></span></span>
+      <span class="account-number"><span class="check-futer-input" placeholder="account number"
+          id="accountNumber"></span></span>
+    </div>
+
+  </div>
+
+
+
+
+  <!--<div class="pop-up" id="pop-up">
+    <div>
+      <button onclick="printMultiple('check')" class="pop-up-print-button">Print</button>
+    </div>
+    <div>
+      <button class="pop-up-downlowad-button">Downlowad</button>
+    </div>
+  </div>-->
+
+  <script src="scripts/pdf.js"></script>
+  <script src="./scripts/functions.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script>
+    function getFormattedDate() {
+      const today = new Date();
+      const dd = String(today.getDate()).padStart(2, '0');
+      const mm = String(today.getMonth() + 1).padStart(2, '0');
+      const yyyy = today.getFullYear();
+
+      return yyyy + '-' + mm + '-' + dd;
+    }
+
+    // Example usage:
+    const formattedDate = getFormattedDate();
+
+
+    document.getElementById('date').value = formattedDate
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+  <div class="addBank" id="addBank">
+    <svg onclick="hideAddBankForm()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+      width="24px" fill="#5f6368">
+      <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+    </svg>
+    <form onsubmit="test(event)" id="bankForm">
+      <form onsubmit="test(event)" id="bankForm">
+        <label for="bankName">Bank name: </label>
+        <input type="text" id="bankName" /><br>
+        
+        <label for="bankNickname">Bank nickname: </label>
+        <input type="text" id="bankNickname" /><br>
+        
+        <label for="name">Name on account: </label>
+        <input type="text" id="name" /><br>
+        
+        <label for="accountNumber2">Account number: </label>
+        <input type="number" id="accountNumber2" /><br>
+        
+        <label for="routingNumber2">Routing number: </label>
+        <input type="number" id="routingNumber2" /><br>
+        
+        <label for="streetAddress">Street Address: </label>
+        <input type="text" id="streetAddress" /><br>
+
+        <label for="streetAddress">Street Address line 2: </label>
+        <input type="text" id="streetAddress" /><br>
+        
+        <label for="city">City: </label>
+        <input type="text" id="city" /><br>
+        
+        <label for="state">State: </label>
+        <input type="text" id="state" /><br>
+        
+        <label for="zipCode">Zip Code: </label>
+        <input type="number" id="zipCode" /><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+      
+  </div>
+
+  </div>
+</body>
+
+</html>

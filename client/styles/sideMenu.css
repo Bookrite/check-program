@@ -1,0 +1,22 @@
+nav{
+    width: 11%;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    
+    position:fixed;
+    }
+    
+    nav li{
+      
+      border: none;
+      height: 50px;
+      
+      
+      padding-left: 20px;
+      color: aliceblue;
+    
+    }
+    

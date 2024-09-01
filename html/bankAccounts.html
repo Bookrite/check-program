@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bankAccounts</title>
+    <link rel="stylesheet" href="../client/styles/banks.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="http://localhost:3001/home.html">Home</a></li>
+            <li><a href="http://localhost:3001/bankAccounts.html">Bank Accounts</a></li>
+            <li><a href="payees.html">Payees</a></li>
+            <li><a href="checks.html">checks</a></li>
+        </ul>
+    </nav>
+
+    <div class="doc">
+        <button type="button" onclick="displayElement('addBank')">Add Bank</button>
+        
+        <div id="addBank" style="display:none;">
+            <form action="/insert" method="POST">
+                <label for="account_number">Account Number:</label><br>
+                <input type="number" id="account_number" name="account_number"><br>
+
+                <label for="routing_number">Routing Number:</label><br>
+                <input type="number" id="routing_number" name="routing_number"><br>
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="bank_name">Bank Name:</label><br>
+                <input type="text" id="bank_name" name="bank_name"><br>
+
+                <label for="bank_nickname">Bank Nickname:</label><br>
+                <input type="text" id="bank_nickname" name="bank_nickname"><br><br>
+
+                <button type="submit" class="addBankButton">Submit</button>
+            </form>
+            <button type="button" onclick="hideElement('addBank')" class="cencelButton">Cencel</button>
+        </div>
+    </div>
+
+    <script src="../client/scripts/t.js"></script>
+</body>
+</html>

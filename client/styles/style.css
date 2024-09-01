@@ -1,0 +1,315 @@
+.date {
+  position: absolute;
+  border: black solid 0px;
+  right: 10px;
+  top: 75px;
+  width: 115px;
+  height: 20px;
+}
+
+
+
+.full-check {
+  border: 0px black solid;
+  width: 8.4in;
+  height: 10.8in;
+  page-break-after: always;
+}
+
+.check {
+  border: 0px solid;
+  width: 8.34in;
+  height: 3.5in;
+  position: absolute;
+}
+
+
+
+.check-number {
+  border: 0px black solid;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  left: 690px;
+  bottom: 270px;
+display: none;
+}
+
+input {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  text-align: left;
+  font-size: 16px;
+  outline: none;
+  border: 0px;
+  font: bolder;
+}
+
+.check-futer {
+  border: black solid 0px;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  top: 275px;
+  right: 0px;
+
+}
+
+.check-futer-input {
+  font-family: micr;
+}
+span .check-futer-input{
+font-size: 15px;
+}
+
+.check-number-foter-input {
+  border: black solid 0px;
+  position: absolute;
+  bottom: 10px;
+  left: 90px;
+  top: 10px;
+  right: 535px;
+
+  font-size: 20px;
+}
+
+.routing-number {
+  border: black solid 0px;
+  position: absolute;
+  bottom: 10px;
+  left: 270px;
+  top: 10px;
+  right: 320px;
+
+  font-size: 20px;
+}
+
+.routing-number :placeholder-shown,
+.check-number-foter-input :placeholder-shown,
+.account-number :placeholder-shown {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.account-number {
+  border: black solid 0px;
+  position: absolute;
+  bottom: 10px;
+  left: 481px;
+  top: 10px;
+  right: 0px;
+
+  font-size: 20px;
+}
+
+.Bank-name {
+  border: black solid 0px;
+  height: 25px;
+  width: 200px;
+  position: absolute;
+  left: 350px;
+  top: 25px;
+
+}
+
+.Signature {
+  border: black solid 0px;
+  position: absolute;
+  top: 235px;
+  left: 550px;
+}
+
+.Signature-text {
+  border: black solid 0px;
+  position: absolute;
+  top: 255px;
+  left: 600px;
+  font-size: 9px;
+}
+
+.Name-address {
+  position: absolute;
+  border: black solid 0px;
+  left: 10px;
+  right: 505px;
+  top: 15px;
+  bottom: 250px;
+
+}
+
+.Text-area {
+  resize: none;
+  outline: none;
+  border: 0px;
+}
+
+.Pay-to {
+  position: absolute;
+  border: 0px black solid;
+  top: 131px;
+  left: 15px;
+  bottom: 198px;
+  font-size: 8.5px;
+}
+
+
+
+.Sign-Hare {
+  position: absolute;
+  border: 0px black solid;
+  top: 210px;
+  left: 530px;
+  bottom: 85px;
+  right: 0px;
+}
+
+.Sign-Hare-input {
+  font-size: 35px;
+  text-align: center;
+  font-family: Bradley Hand ITC;
+}
+
+.Pay-To-Input {
+  position: absolute;
+  border: 0px black solid;
+  top: 120px;
+  left: 70px;
+  right: 140px;
+  bottom: 187px;
+
+
+}
+
+
+
+.Pay-To-Input input[type="text"] {
+  padding-top: 15px;
+  font-size: 16px;
+}
+
+.amaunt {
+  position: absolute;
+  border: black solid 0px;
+  top: 130px;
+  left: 670px;
+  width: 125px;
+  height: 25px;
+}
+
+.text-amaunt {
+  position: absolute;
+  border: black solid 0px;
+  top: 172px;
+  left: 15px;
+
+}
+
+.text-amaunt-input {
+  position: absolute;
+  border: black solid 0px;
+  top: 170px;
+  left: 25px;
+  height: 20px;
+  width: 670px;
+  display: none;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.pop-up {
+  position: absolute;
+  border: blue solid 2px;
+  top: 30%;
+  bottom: 30%;
+  right: 30%;
+  left: 30%;
+  background-color: rgb(150, 240, 240);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  display: none;
+}
+
+.pop-up-print-button {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  width: 50%;
+  height: 50px;
+  background-color: rgb(127, 255, 127);
+
+
+}
+
+.pop-up-downlowad-button {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 50%;
+  height: 50px;
+  background-color: rgb(127, 255, 127);
+
+}
+
+.addBank {
+  position: absolute;
+  border: black solid 1px;
+  background-color: rgb(241, 242, 237);
+
+  left: 30%;
+  right: 30%;
+  width: 50%;
+  top: 45px;
+  display: none;
+}
+
+.addBank input {
+  position: relative;
+  border: black solid 1px;
+}
+
+.addBank {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.addBank form {
+  display: flex;
+  flex-direction: column;
+}
+
+.addBank label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.addBank input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.addBank button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addBank button:hover {
+  background-color: #0056b3;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
