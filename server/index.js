@@ -5,7 +5,7 @@ import cors from "cors";
 import {fileURLToPath} from "url"
 import { dirname , join } from "path";  
 import db from "./countrolers/db.js"; 
-const port = 3000
+const port = 80
 
 const app = express() 
 app.use(express.json());
