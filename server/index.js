@@ -5,9 +5,18 @@ import cors from "cors";
 import {fileURLToPath} from "url"
 import { dirname , join } from "path";  
 import db from "./countrolers/db.js"; 
+import https from 'https';
+import fs from 'fs';
 const port = 80
 
 const app = express() 
+
+const options = {
+    key: fs.readFileSync('path/to/private.key'),
+    cert: fs.readFileSync('path/to/certificate.crt')
+  };
+
+
 app.use(express.json());
 app.use(cors())
 app.use('',bankRout)
@@ -40,4 +49,6 @@ const  accountNumber = req.body.accountNumber
 
 
 
-app.listen(port,()=>{console.log(`server is lisening at port http://localhost:${port}`)}) 
+https.createServer(options, app).listen(port, () => {
+    console.log(`HTTPS server running on port ${port}`);
+  });
